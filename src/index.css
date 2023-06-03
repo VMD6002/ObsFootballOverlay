@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply border-stone-600 uppercase
+}  
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply bg-stone-700
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-white/75 rounded-full
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-white/90
+}
+::-webkit-scrollbar-thumb:active {
+  @apply bg-white/90
+}
+
+.drtl {
+  direction: rtl;
+}
